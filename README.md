@@ -1,9 +1,10 @@
 # Grupos-Relacionados-Diagnostico
 GRD Data Analytics
 
-Presento los siguientes archivos en llenguaje de codigo Python.
-Los datos fueron procesado con Visual Studio Code
+Presento los siguientes archivos en lenguaje de codigo Python, excel y jpg
+Sobre codigos GRD
 
+Python
 Hay 3 archivos en python .py
 2019_top_20
 2020_top_20
@@ -15,13 +16,15 @@ y su contador de cuantas veces se repiten esos codigos GRD.
 Cada archivo Py es para un año diferente, y se genera una tabla automatica al correr el codigo en la misma localización del scrip o archivo py.
 Ejmplo de tabla creada: tabla.csv_2020
 
-Una vez obtenida las las tablas, las importe a excel. 
+Excel
+Una vez obtenida las las tablas, las importe a un excel.  
 Luego importe a excel las hojas de los archivos excel CIE_9 y CIE_10 desde la pagina de FONASA
 
 Fuente de los datos: 
 https://www.fonasa.cl/sites/fonasa/datos-abiertos/bases-grd 
 En base a búsqueda en octubre del 2023
 
+Jpg
 Los top_20 de GRD combinados fueron cruzados con la descripción de sus respectivos códigos, asi se creo una tabla que incluyera
 los codigos y sus descripciones con la formula BUSCARV, para luego pasar estas tablas a archivos de foto .jpg, creando 3 archivos:
 
