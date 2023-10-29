@@ -10,12 +10,13 @@ dtype_options = {'column26': str, 'column27': str, 'column28': str,
 'column89': str, 'column90': str, 'column92': str}
 
 # Cargar el conjunto de datos
-df = pd.read_csv('C:\\Users\\josee\\OneDrive\\Documentos\\Proyectos Propios\\GRD\\Analisis de la Distribucion de los GRD\\Codigos agrupados top 20\\GRD_PUBLICO_2021.txt', sep='|', low_memory=False)
+# Ojo con separar la ruta con \\, y fijarse si la tabla de datos esta separada por comas, espación o |. 
+df = pd.read_csv('C:\\Users\\GRD_PUBLICO_2021.txt', sep='|', low_memory=False)
 
 # Contar las ocurrencias de combinaciones de las columnas
 counts = df.groupby(['DIAGNOSTICO1', 'DIAGNOSTICO2', 'PROCEDIMIENTO1', 'PROCEDIMIENTO2']).size().reset_index(name='COUNT')
 
-# Ordenar en orden descendente por COUNT y seleccionar las 5 combinaciones más comunes
+# Ordenar en orden descendente por COUNT y seleccionar las 20 combinaciones más comunes
 top_20_combinaciones = counts.sort_values(by='COUNT', ascending=False).head(20)
 
 # Guarda la tabla como un archivo CSV
