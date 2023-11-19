@@ -32,4 +32,3 @@ top_20_2019.jpg
 top_20_2020.jpg
 top_20_2021.jpg
 
-Estas tablas descriptivas permitirian el analisis de los GRD, pero se necesita mayor información.
